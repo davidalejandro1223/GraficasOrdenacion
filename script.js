@@ -1,16 +1,30 @@
-    //metodo por seleccion
+//--Declaracion Arreglos--
     var arrPuntosS = [];
     var arrPuntosB = [];
     var arrPuntosIns = [];    
     var arrN = [];
+
     for (i = 1; i <= 200; i++) {
+
+        //--contadores--
         var s = 0;
+        var b = 0;
+        var ins =0;
+
+        // --Generacion de los arreglos--
         var arregloS = [i];
+        var arregloB = [i];
+        var arregloIns = [i];
         for (h = 0; h < i; h++) {
-            arregloS[h] = Math.round(Math.random() * 10);
+            var num = Math.round(Math.random() * 10);
+            arregloS[h] = num;
+            arregloB[h] = num;
+            arregloIns[h] = num;
         }
         
         //console.log(arreglo.join(', '));
+
+        //--Metodo de seleccion--
         s = s + 1;
         for (j = 0; j < i - 1; j++) {
             s = s + 9;
@@ -35,18 +49,10 @@
 
         arrN.push(i); 
         arrPuntosS.push(s);
-    }
+        //--Fin Metodo seleccion--
 
-    //metodo de la burbuja
-
-    
-    for (i = 1; i <= 200; i++) {
-        var b = 0;
-        var arregloB = [i];
-        for (h = 0; h < i; h++) {
-            arregloB[h] = Math.round(Math.random() * 10);
-        }
-        //console.log(arreglo.join(', '));
+        //--Metodo Burbuja--
+        
         b = b + 1;
         for (j = 0; j < (i - 1); j++) {
             b = b + 5;
@@ -63,30 +69,12 @@
         }
         b = b + 2;
 
-
-        // var puntoB = {
-        //     x: i,
-        //     y: b
-        // }
-
         arrPuntosB.push(b);
 
-    }
+        //--Fin metodo burbuja--
 
-    // arrPuntosB.forEach(function(puntoB) {
-    //     console.log("x=" + puntoB.x + "  y=" + puntoB.y);
-    // });
-
-    //Metodo de insersion
-
-    for (i=1; i<=200; i++){
-        var ins =0;
-        var arregloIns = [i];
-        for(l=0; l<i;l++){
-            arregloIns[l] = Math.round(Math.random()*10);
-        }
+        //--Metodo insercion--
         ins = 2;
-        
         var it=2;
         ins = ins+1;
         while(it<=i){
@@ -105,6 +93,9 @@
         ins = ins+1;
 
         arrPuntosIns.push(ins);
+        //--Fin metodo Insercion--
+
+
     }
 
     //Generacion de la grafica
