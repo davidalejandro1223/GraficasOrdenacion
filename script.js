@@ -94,8 +94,6 @@
 
         arrPuntosIns.push(ins);
         //--Fin metodo Insercion--
-
-
     }
 
     //Generacion de la grafica
