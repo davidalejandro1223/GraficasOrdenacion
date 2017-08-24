@@ -33,7 +33,6 @@
         }
         
         //console.log(arreglo.join(', '));
-
         //--Metodo de seleccion--
         s = s + 1;
         for (j = 0; j < i - 1; j++) {
@@ -115,8 +114,7 @@
         //--implementacion QuickSort--
         
         quickSort(arregloQuick);
-        
-        
+        contQuick = i*Math.log(i)
         arrPuntosQuick.push(contQuick);
     }
 
@@ -285,10 +283,10 @@
                 label: "Metodo de QuickSort",
                 data: arrPuntosQuick,
                 backgroundColor: [
-                    'rgba(247, 228,85, 0.2)'
+                    'rgba(52, 73, 94, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(247, 228, 85, 1)'
+                    'rgba(52, 73, 94, 1)'
                 ],
                 borderWidth: 1
 
